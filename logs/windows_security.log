@@ -1,0 +1,23 @@
+EventID: 4624
+User: Administrator
+Action: Successful Login
+
+EventID: 4625
+User: Administrator
+Action: Failed Login
+
+EventID: 4625
+User: Administrator
+Action: Failed Login
+
+EventID: 4672
+User: Administrator
+Action: Special Privileges Assigned
+
+EventID: 4720
+User: temp_user
+Action: Account Created
+
+EventID: 4688
+Process: powershell.exe
+CommandLine: powershell.exe -enc SQBmACgA

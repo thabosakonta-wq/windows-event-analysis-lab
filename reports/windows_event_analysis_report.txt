@@ -1,0 +1,28 @@
+WINDOWS EVENT ANALYSIS REPORT
+
+Incident ID:
+WEA-2026-001
+
+Date:
+2026-06-29
+
+Summary:
+Analysis of Windows Security Events identified failed login attempts, privileged account activity, account creation activity, and PowerShell execution.
+
+Findings:
+- Failed Login Events (4625): 2
+- Privileged Activity (4672): 1
+- Account Creation (4720): 1
+- PowerShell Execution (4688): 1
+
+Severity:
+HIGH
+
+MITRE ATT&CK Mapping:
+T1110 - Brute Force
+T1078 - Valid Accounts
+T1136 - Create Account
+T1059.001 - PowerShell
+
+Recommendations:
+- Review failed login activity
