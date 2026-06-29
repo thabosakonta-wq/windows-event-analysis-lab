@@ -59,9 +59,8 @@ Detects Windows Event ID 4688 and identifies PowerShell execution activity.
 
 ---
 
-## Project Structure
+#Project Structure
 
-```text
 Windows-Event-Analysis-Lab
 ├── logs
 │   └── windows_security.log
@@ -76,7 +75,6 @@ Windows-Event-Analysis-Lab
     ├── account_creation_detector.sh
     ├── failed_login_detector.sh
     └── privileged_activity_detector.sh
-```
 
 ## Author
 
