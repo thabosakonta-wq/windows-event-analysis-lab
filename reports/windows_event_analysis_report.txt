@@ -6,23 +6,101 @@ WEA-2026-001
 Date:
 2026-06-29
 
-Summary:
-Analysis of Windows Security Events identified failed login attempts, privileged account activity, account creation activity, and PowerShell execution.
+Executive Summary
 
-Findings:
-- Failed Login Events (4625): 2
-- Privileged Activity (4672): 1
-- Account Creation (4720): 1
-- PowerShell Execution (4688): 1
+Windows Security Event Logs were analyzed to identify suspicious activity related to authentication, privilege escalation, account creation, and PowerShell execution.
 
-Severity:
+Findings
+
+Failed Login Activity
+
+Event ID:
+4625
+
+Occurrences:
+2
+
+Description:
+Multiple failed authentication attempts detected against the Administrator account.
+
+MITRE ATT&CK:
+T1110 – Brute Force
+
+Risk:
+High
+
+Privileged Activity
+
+Event ID:
+4672
+
+Occurrences:
+1
+
+Description:
+Special privileges assigned to an account.
+
+MITRE ATT&CK:
+T1078 – Valid Accounts
+
+Risk:
+High
+
+Account Creation
+
+Event ID:
+4720
+
+Occurrences:
+1
+
+Description:
+A new account (temp_user) was created.
+
+MITRE ATT&CK:
+T1136 – Create Account
+
+Risk:
+Medium
+
+PowerShell Execution
+
+Event ID:
+4688
+
+Occurrences:
+1
+
+Description:
+PowerShell execution detected.
+
+MITRE ATT&CK:
+T1059.001 – PowerShell
+
+Risk:
+High
+
+Overall Severity
+
 HIGH
 
-MITRE ATT&CK Mapping:
-T1110 - Brute Force
-T1078 - Valid Accounts
-T1136 - Create Account
-T1059.001 - PowerShell
+Recommendations
 
-Recommendations:
-- Review failed login activity
+Review failed login activity
+
+Investigate privileged account usage
+
+Validate account creation activity
+
+Analyze PowerShell execution
+
+Correlate with endpoint telemetry
+
+Review endpoint security controls
+
+Conclusion
+
+Potential suspicious activity was identified during analysis. Additional investigation is recommended to determine whether the observed events represent legitimate administrative activity or malicious behavior.
+
+
+

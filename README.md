@@ -31,18 +31,17 @@ Detects Windows Event ID 4688 and identifies PowerShell execution activity.
 
 Screenshots
 
-Failed Login Detection
+### Failed Login Detection
 
-"Failed Login Detection" (screenshots/failed_login_analysis.png)
+![Failed Login Detection](screenshots/failed_login_analysis.png)
 
-Privileged Activity Detection
+### Privileged Activity Detection
 
-"Privileged Activity Detection" (screenshots/privileged_activity_detection.png)
+![Privileged Activity Detection](screenshots/privileged_activity_detection.png)
 
-Account Creation Detection
+### Account Creation Detection
 
-"Account Creation Detection" (screenshots/account_creation_detection.png)
-
+![Account Creation Detection](screenshots/account_creation_detection.png)
 ---
 
 MITRE ATT&CK Mapping
@@ -105,13 +104,10 @@ Windows-Event-Analysis-Lab/
 │   └── privileged_activity_detection.png
 
 ├── scripts
-
 │   ├── account_creation_detector.sh
-
 │   ├── failed_login_detector.sh
-
+│   ├── powershell_detector.sh
 │   └── privileged_activity_detector.sh
-
 └── README.md
 
 ---
