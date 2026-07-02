@@ -45,7 +45,8 @@ Screenshots
 
 ### PowerShell Detection
 
-![PowerShell Detection](screenshots/powershell_detection.png)
+![PowerShell Detection](screenshots/powershell_detections.png)
+
 ---
 
 MITRE ATT&CK Mapping
