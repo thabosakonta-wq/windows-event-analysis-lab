@@ -42,6 +42,10 @@ Screenshots
 ### Account Creation Detection
 
 ![Account Creation Detection](screenshots/account_creation_detection.png)
+
+### PowerShell Detection
+
+![PowerShell Detection](screenshots/powershell_detection.png)
 ---
 
 MITRE ATT&CK Mapping
