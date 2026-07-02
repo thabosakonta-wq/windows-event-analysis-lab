@@ -7,16 +7,12 @@ Date:
 2026-06-29
 
 Executive Summary
-
 Windows Security Event Logs were analyzed to identify suspicious activity related to authentication, privilege escalation, account creation, and PowerShell execution.
 
 Findings
-
 Failed Login Activity
-
 Event ID:
 4625
-
 Occurrences:
 2
 
@@ -25,61 +21,47 @@ Multiple failed authentication attempts detected against the Administrator accou
 
 MITRE ATT&CK:
 T1110 – Brute Force
-
 Risk:
 High
 
 Privileged Activity
-
 Event ID:
 4672
-
 Occurrences:
 1
 
 Description:
 Special privileges assigned to an account.
-
 MITRE ATT&CK:
 T1078 – Valid Accounts
-
 Risk:
 High
 
 Account Creation
-
 Event ID:
 4720
-
 Occurrences:
 1
 
 Description:
 A new account (temp_user) was created.
-
 MITRE ATT&CK:
 T1136 – Create Account
-
 Risk:
 Medium
 
 PowerShell Execution
-
 Event ID:
 4688
-
 Occurrences:
 1
 
 Description:
 PowerShell execution detected.
-
 MITRE ATT&CK:
 T1059.001 – PowerShell
-
 Risk:
 High
-
 Overall Severity
 HIGH
 
@@ -95,6 +77,3 @@ Review endpoint security controls
 Conclusion
 
 Potential suspicious activity was identified during analysis. Additional investigation is recommended to determine whether the observed events represent legitimate administrative activity or malicious behavior.
-
-
-
