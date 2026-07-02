@@ -81,21 +81,15 @@ Risk:
 High
 
 Overall Severity
-
 HIGH
 
-Recommendations
+RRecommendations
 
 Review failed login activity
-
 Investigate privileged account usage
-
 Validate account creation activity
-
 Analyze PowerShell execution
-
 Correlate with endpoint telemetry
-
 Review endpoint security controls
 
 Conclusion
