@@ -18,7 +18,6 @@ Occurrences:
 
 Description:
 Multiple failed authentication attempts detected against the Administrator account.
-
 MITRE ATT&CK:
 T1110 – Brute Force
 Risk:
