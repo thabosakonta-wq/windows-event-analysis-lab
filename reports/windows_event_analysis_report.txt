@@ -65,11 +65,9 @@ High
 Overall Severity
 
 HIGH
-with
 
-Overall Severity
-
-HIGH
+Reason:
+Multiple ATT&CK techniques associated with Initial Access, Execution, Privilege Escalation and Persistence were identified during analysis.
 
 Reason:
 Multiple ATT&CK techniques associated with Initial Access, Execution, Privilege Escalation and Persistence were identified during analysis.Overall Severity
