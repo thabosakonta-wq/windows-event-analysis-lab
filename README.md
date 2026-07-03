@@ -3,6 +3,21 @@ Windows Event Analysis Lab
 
 Overview
 
+## Objectives
+
+This lab demonstrates how Security Operations Center (SOC) analysts investigate Windows Security Event Logs to detect suspicious authentication attempts, privileged account activity, unauthorized account creation, and PowerShell execution using Bash-based detection scripts.
+
+---
+
+## Detection Coverage
+
+| Event ID | Detection | Risk |
+|----------|-----------|------|
+|4625|Failed Login|High|
+|4672|Privileged Activity|High|
+|4720|Account Creation|Medium|
+|4688|PowerShell Execution|High|
+
 A cybersecurity project focused on Windows Security Event Log analysis, incident investigation, detection engineering, and MITRE ATT&CK mapping.
 
 This lab demonstrates how Security Operations Center (SOC) analysts investigate Windows Security Events to identify suspicious activity, privilege escalation attempts, account creation events, and authentication failures.
@@ -128,6 +143,17 @@ Learning Outcomes
 - SOC Operations
 - Bash Automation
 - MITRE ATT&CK Mapping
+
+---
+
+## Future Enhancements
+
+- Windows Event Forwarding (WEF)
+- Sysmon Event Analysis
+- Sigma Rule Integration
+- Microsoft Sentinel Integration
+- Automated IOC Detection
+- PowerShell Script Block Logging
 
 ---
 

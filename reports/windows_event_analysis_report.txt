@@ -61,10 +61,21 @@ MITRE ATT&CK:
 T1059.001 – PowerShell
 Risk:
 High
+
 Overall Severity
+
+HIGH
+with
+
+Overall Severity
+
 HIGH
 
-RRecommendations
+Reason:
+Multiple ATT&CK techniques associated with Initial Access, Execution, Privilege Escalation and Persistence were identified during analysis.Overall Severity
+HIGH
+
+Recommendations
 
 Review failed login activity
 Investigate privileged account usage
