@@ -86,4 +86,6 @@ Review endpoint security controls
 
 Conclusion
 
-Potential suspicious activity was identified during analysis. Additional investigation is recommended to determine whether the observed events represent legitimate administrative activity or malicious behavior.
+Windows Security Event analysis identified multiple security events that, when correlated, may indicate attacker behavior consistent with credential attacks, privilege escalation, persistence, and PowerShell execution.
+
+Although individual events may represent legitimate administrative activity, the combined sequence warrants additional investigation to determine whether malicious activity occurred.
