@@ -102,34 +102,29 @@ reports/mitre_mapping.md
 
 ---
 
-Project Structure
+## Project Structure
 
+```text
 Windows-Event-Analysis-Lab/
-
-├── logs
-
+├── logs/
 │   └── windows_security.log
-
-├── reports
-
+├── reports/
+│   ├── executive_summary.md
 │   ├── mitre_mapping.md
-
 │   └── windows_event_analysis_report.txt
-
-├── screenshots
-
+├── screenshots/
 │   ├── account_creation_detection.png
-
 │   ├── failed_login_analysis.png
-
+│   ├── powershell_detections.png
 │   └── privileged_activity_detection.png
-
-├── scripts
+├── scripts/
 │   ├── account_creation_detector.sh
 │   ├── failed_login_detector.sh
 │   ├── powershell_detector.sh
 │   └── privileged_activity_detector.sh
-└── README.md
+├── README.md
+└── LICENSE
+```
 
 ---
 
