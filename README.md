@@ -73,7 +73,7 @@ The lab uses Bash automation to parse Windows Security Event Logs, detect securi
 
 ---
 
-## Technologies Used
+## Detection Coverage
 
 - Bash
 - Linux
@@ -165,7 +165,7 @@ Windows-Event-Analysis-Lab
 
 ## Author
 
-**Thabo Sakonta**
+Thabo Sakonta
 
 Microsoft Certified Security Operations Analyst (SC-200)
 
