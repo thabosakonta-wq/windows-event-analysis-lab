@@ -16,10 +16,10 @@ The lab uses Bash automation to parse Windows Security Event Logs, detect securi
 
 - Demonstrate Windows Security Event Log analysis.
 - Detect common security events using Bash scripts.
-- Investigate authentication and privilege-related activity.
-- Map detections to the MITRE ATT&CK framework.
+- Investigate authentication activity.
+- Map detections to MITRE ATT&CK.
 - Produce SOC investigation documentation.
-- Demonstrate skills expected of an entry-level SOC Analyst.
+- Demonstrate SOC Analyst skills.
 
 ---
 
