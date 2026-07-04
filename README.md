@@ -1,66 +1,124 @@
 # Windows Event Analysis Lab
 
-A cybersecurity project focused on Windows Security Event Log analysis, incident investigation, detection engineering, and MITRE ATT&CK mapping.
+A cybersecurity project demonstrating Windows Security Event Log analysis, incident investigation, detection engineering, and MITRE ATT&CK mapping.
 
 ---
 
 ## Overview
 
-This lab demonstrates how Security Operations Center (SOC) analysts investigate Windows Security Event Logs to identify:
+This project demonstrates how Security Operations Center (SOC) analysts investigate Windows Security Event Logs to identify suspicious authentication attempts, privileged account activity, unauthorized account creation, and PowerShell execution.
 
-- Failed authentication attempts
-- Privileged account activity
-- Unauthorized account creation
-- PowerShell execution
-- Indicators of compromise
-
-The project uses Bash automation to parse Windows Security Event Logs and map detections to the MITRE ATT&CK framework.
+The lab uses Bash automation to parse Windows Security Event Logs, detect security events, and document findings through professional investigation reports.
 
 ---
 
 ## Objectives
 
-- Detect suspicious Windows Security Events.
-- Demonstrate SOC investigation workflows.
-- Perform Windows Event Log analysis.
-- Automate detections using Bash.
-- Map detections to MITRE ATT&CK.
-- Produce investigation reports suitable for SOC documentation.
-
----
-
-## Detection Coverage
-
-| Event ID | Detection | Risk |
-|----------|-----------|------|
-|4625|Failed Login|High|
-|4672|Privileged Activity|High|
-|4720|Account Creation|Medium|
-|4688|PowerShell Execution|High|
+- Demonstrate Windows Security Event Log analysis.
+- Detect common security events using Bash scripts.
+- Investigate authentication and privilege-related activity.
+- Map detections to the MITRE ATT&CK framework.
+- Produce SOC investigation documentation.
+- Demonstrate skills expected of an entry-level SOC Analyst.
 
 ---
 
 ## Features
 
-Failed Login Analysis
+### Failed Login Analysis
 
-Detects Windows Event ID 4625 and identifies possible brute-force activity.
+- Detects Windows Event ID **4625**
+- Identifies repeated failed authentication attempts
+- Supports brute-force detection scenarios
 
-Privileged Activity Analysis
+### Privileged Activity Analysis
 
-Detects Windows Event ID 4672 and identifies privileged account actions.
+- Detects Windows Event ID **4672**
+- Identifies privileged account activity
+- Highlights possible privilege escalation
 
-Account Creation Analysis
+### Account Creation Analysis
 
-Detects Windows Event ID 4720 and identifies newly created accounts.
+- Detects Windows Event ID **4720**
+- Identifies newly created user accounts
+- Supports persistence detection
 
-PowerShell Activity Analysis
+### PowerShell Activity Analysis
 
-Detects Windows Event ID 4688 and identifies PowerShell execution activity.
+- Detects Windows Event ID **4688**
+- Identifies PowerShell execution
+- Supports execution technique detection
 
 ---
 
-Screenshots
+## MITRE ATT&CK Coverage
+
+| Event ID | Technique | Description |
+|----------|-----------|-------------|
+|4625|T1110|Brute Force|
+|4672|T1078|Valid Accounts|
+|4720|T1136|Create Account|
+|4688|T1059.001|PowerShell|
+
+---
+
+## Detection Coverage
+
+| Detection | Event ID | Severity |
+|-----------|----------|----------|
+|Failed Login Attempts|4625|High|
+|Privileged Activity|4672|High|
+|Account Creation|4720|Medium|
+|PowerShell Execution|4688|High|
+
+---
+
+## Technologies Used
+
+- Bash
+- Linux
+- Termux
+- Git
+- GitHub
+- Windows Security Event Logs
+- MITRE ATT&CK
+
+---
+
+## Project Structure
+
+```text
+Windows-Event-Analysis-Lab
+├── logs
+│   └── windows_security.log
+├── reports
+│   ├── executive_summary.md
+│   ├── mitre_mapping.md
+│   └── windows_event_analysis_report.txt
+├── screenshots
+│   ├── account_creation_detection.png
+│   ├── failed_login_analysis.png
+│   ├── powershell_detections.png
+│   └── privileged_activity_detection.png
+├── scripts
+│   ├── account_creation_detector.sh
+│   ├── failed_login_detector.sh
+│   ├── powershell_detector.sh
+│   └── privileged_activity_detector.sh
+└── README.md
+```
+
+---
+
+## Reports
+
+- `reports/executive_summary.md`
+- `reports/windows_event_analysis_report.txt`
+- `reports/mitre_mapping.md`
+
+---
+
+## Screenshots
 
 ### Failed Login Detection
 
@@ -80,79 +138,15 @@ Screenshots
 
 ---
 
-MITRE ATT&CK Mapping
-
-| Event ID | Technique | Description |
-|----------|-----------|-------------|
-| 4625 | T1110 | Brute Force |
-| 4672 | T1078 | Valid Accounts |
-| 4720 | T1136 | Create Account |
-| 4688 | T1059.001 | PowerShell |
-
----
-
-Technologies Used
-
-- Linux
-- Bash
-- Termux
-- Git
-- GitHub
-- MITRE ATT&CK
-
----
-
-Reports
-
-Investigation Report
-
-Location:
-
-reports/windows_event_analysis_report.txt
-
-MITRE Mapping
-
-Location:
-
-reports/mitre_mapping.md
-
----
-
-## Project Structure
-
-```text
-Windows-Event-Analysis-Lab/
-├── logs/
-│   └── windows_security.log
-├── reports/
-│   ├── executive_summary.md
-│   ├── mitre_mapping.md
-│   └── windows_event_analysis_report.txt
-├── screenshots/
-│   ├── account_creation_detection.png
-│   ├── failed_login_analysis.png
-│   ├── powershell_detections.png
-│   └── privileged_activity_detection.png
-├── scripts/
-│   ├── account_creation_detector.sh
-│   ├── failed_login_detector.sh
-│   ├── powershell_detector.sh
-│   └── privileged_activity_detector.sh
-├── README.md
-└── LICENSE
-```
-
----
-
-Learning Outcomes
+## Learning Outcomes
 
 - Windows Event Log Analysis
 - Security Monitoring
 - Threat Detection
 - Detection Engineering
+- Bash Automation
 - Incident Investigation
 - SOC Operations
-- Bash Automation
 - MITRE ATT&CK Mapping
 
 ---
@@ -163,21 +157,26 @@ Learning Outcomes
 - Sysmon Event Analysis
 - Sigma Rule Integration
 - Microsoft Sentinel Integration
+- Microsoft Defender XDR Integration
 - Automated IOC Detection
 - PowerShell Script Block Logging
 
 ---
 
-Author
+## Author
 
-Thabo Sakonta
+**Thabo Sakonta**
 
 Microsoft Certified Security Operations Analyst (SC-200)
 
-GitHub: https://github.com/thabosakonta-wq
+- GitHub: https://github.com/thabosakonta-wq
+- LinkedIn: https://www.linkedin.com/in/thabo-sakonta-377a3748
 
-LinkedIn: https://www.linkedin.com/in/thabo-sakonta-377a3748
+---
 
+## License
+
+This project is provided for educational, research, and portfolio demonstration purposes.
 ---
 
 License
