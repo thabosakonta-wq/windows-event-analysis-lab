@@ -177,8 +177,3 @@ Microsoft Certified Security Operations Analyst (SC-200)
 ## License
 
 This project is provided for educational, research, and portfolio demonstration purposes.
----
-
-License
-
-This project is provided for educational and portfolio purposes.
