@@ -73,8 +73,6 @@ The lab uses Bash automation to parse Windows Security Event Logs, detect securi
 
 ---
 
-## Detection Coverage
-
 - Bash
 - Linux
 - Termux
